@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinoGear管理系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+            margin-right: 10px;
+        }
+        .main-content {
+            display: flex;
+        }
+        .left-column {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .right-column {
+            flex: 1;
+        }
+        .quick-access {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .todo-list, .updates, .reports {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>2024年09月26日 星期一 欢迎使用管理框架。</div>
+            <div>欢迎来到SinoGear <span>👤</span></div>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-card">今日总访问次数: 7</div>
+            <div class="stat-card">当前在线人数: 3</div>
+            <div class="stat-card">系统消息: 3</div>
+            <button class="btn">新手指导</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-column">
+                <div class="quick-access">
+                    <h2>快捷入口 <span style="float: right;">管理 定制</span></h2>
+                    <div class="grid">
+                        <div class="grid-item">角色管理</div>
+                        <div class="grid-item">用户管理</div>
+                        <div class="grid-item">资源管理</div>
+                        <div class="grid-item">字典管理</div>
+                        <div class="grid-item">组织管理</div>
+                        <div class="grid-item">权限分配</div>
+                        <div class="grid-item">工作流待办</div>
+                        <div class="grid-item">工作流已办</div>
+                        <div class="grid-item">我的消息</div>
+                    </div>
+                </div>
+                
+                <div class="todo-list">
+                    <h2>待办事项 <span>待办 9 已完成 18</span></h2>
+                    <ul>
+                        <li>医疗费用核复:审批, 请处理 <button class="btn">查看</button></li>
+                        <li>医疗费用核复:审核, 请处理 <button class="btn">查看</button></li>
+                        <li>医疗费用核复:审核, 请处理 <button class="btn">查看</button></li>
+                    </ul>
+                    <div>< 1 2 3 4 5 6 ></div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="updates">
+                    <h2>最近更新 <span style="float: right;">更多</span></h2>
+                    <ul>
+                        <li>SinoGear 3.1.0 - 2023-04-12</li>
+                        <li>SinoGear 3.0.0 - 2023-09-27</li>
+                        <li>SinoGear 2.9.0 - 2023-05-10</li>
+                        <!-- 更多版本更新 -->
+                    </ul>
+                </div>
+                
+                <div class="reports">
+                    <h2>近一周异常上报</h2>
+                    <!-- 异常上报内容 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
